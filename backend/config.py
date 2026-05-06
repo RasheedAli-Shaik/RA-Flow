@@ -1,0 +1,26 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+BACKEND_DIR = ROOT_DIR / "backend"
+STORAGE_DIR = BACKEND_DIR / "storage"
+DATA_DIR = STORAGE_DIR / "data"
+UPLOAD_DIR = STORAGE_DIR / "uploads"
+OPTIMIZED_DIR = STORAGE_DIR / "optimized"
+CACHE_DIR = STORAGE_DIR / "cache"
+LOG_DIR = STORAGE_DIR / "logs"
+
+API_HOST = "0.0.0.0"
+API_PORT = 8000
+SOCKET_HOST = "0.0.0.0"
+SOCKET_PORT = 8001
+
+DEFAULT_GRID_RESOLUTION = 64
+STREAM_SAMPLE_STEP = 4
+STREAM_FRAMES = 18
+DEFAULT_WIND_VECTOR = (1.0, 0.0, 0.0)
+OPTIMIZATION_ITERATIONS = 8
+OPTIMIZATION_STEP = 0.035
+

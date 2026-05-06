@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f3efe7;
+  background:
+    radial-gradient(circle at top left, rgba(255, 138, 77, 0.2), transparent 35%),
+    radial-gradient(circle at top right, rgba(107, 241, 199, 0.14), transparent 28%),
+    linear-gradient(160deg, #091019 0%, #0a1623 38%, #08121b 100%);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.panel-sheen {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0)),
+    rgba(15, 31, 45, 0.88);
+  backdrop-filter: blur(18px);
+}
+
+.metric-card {
+  border: 1px solid rgba(157, 216, 255, 0.1);
+  background: linear-gradient(180deg, rgba(157, 216, 255, 0.06), rgba(255, 255, 255, 0.02));
+}
+
